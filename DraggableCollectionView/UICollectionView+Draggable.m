@@ -30,6 +30,16 @@
     [self getHelper].enabled = draggable;
 }
 
+- (BOOL)deletable
+{
+    return [self getHelper].deletable;
+}
+
+- (void)setDeletable:(BOOL)deletable
+{
+    [self getHelper].deletable = deletable;
+}
+
 - (UIEdgeInsets)scrollingEdgeInsets
 {
     return [self getHelper].scrollingEdgeInsets;
