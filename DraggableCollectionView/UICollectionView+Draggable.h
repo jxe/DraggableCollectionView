@@ -10,6 +10,8 @@
 @interface UICollectionView (Draggable)
 
 @property (nonatomic, assign) BOOL draggable;
+@property (nonatomic, assign) BOOL deletable; // delete cells if dropped outside the collectionView bounds. Defaults is NO
 @property (nonatomic, assign) UIEdgeInsets scrollingEdgeInsets;
 @property (nonatomic, assign) CGFloat scrollingSpeed;
+
 @end
