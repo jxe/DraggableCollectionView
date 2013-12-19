@@ -218,9 +218,6 @@ typedef NS_ENUM(NSInteger, _ScrollingDirection) {
     if (sender.state == UIGestureRecognizerStateChanged) {
         return;
     }
-    if (![self.collectionView.dataSource conformsToProtocol:@protocol(UICollectionViewDataSource_Draggable)]) {
-        return;
-    }
     
 	_hasShouldAlterTranslationDelegateMethod = [self.collectionView.dataSource respondsToSelector:@selector(collectionView:alterTranslation:)];
 	
